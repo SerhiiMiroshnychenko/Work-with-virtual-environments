@@ -35,3 +35,23 @@ Python встановить значення include-system-site-packagesin в �
 Цей параметр означає, що ви можете використовувати будь-які зовнішні пакунки,
 які ви встановили на своєму базовому Python, як якщо б ви встановили їх у своєму віртуальному середовищі.
 
+Дослідженя префіксних щляхів:
+(.venv) PS D:\Python\work_with_virt_env\first_venv> python
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.prefix
+'D:\\Python\\work_with_virt_env\\first_venv\\.venv'
+>>> sys.base_prefix
+'C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python311'
+
+Без активації віртуального середовища вводимо в консолі:
+D:\Python\work_with_virt_env\first_venv\.venv\Scripts\python.exe
+запускає python зі вказаного віртуального середовища
+
+В інтерпритаторі python перевірити список залежностей:
+import pkg_resources
+installed_packages = pkg_resources.working_set
+for package in installed_packages:
+    print(package.key)
+
