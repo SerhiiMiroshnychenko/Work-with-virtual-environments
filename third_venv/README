@@ -1,0 +1,3 @@
+C:\Users\admin\AppData\Local\Programs\Python\Python310\python -m venv .venv --prompt="python3.10"
+створити нове віртуальне оточення на основі python 3.10 з відповідним ідентифікатором
+
