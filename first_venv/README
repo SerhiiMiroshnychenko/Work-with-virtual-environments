@@ -7,6 +7,14 @@ python -m venv .venv
 pip list
 перегляд списку залежностей наявних у віртуальному середовищі
 
+python -m pip freeze
+або
+pip freeze
+перегляд списку залежностей наявних у віртуальному середовищі у вигляді як для requirements.txt
+
+pip freeze > requirements.txt
+створення файлу з залежностями
+
 (Get-Command python).Source
 або
 (Get-Command python).Path
