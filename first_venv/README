@@ -1,0 +1,14 @@
+python -m venv .venv
+створення віртуального середовища в діректорії ".venv"
+
+.venv\Scripts\activate
+активація віртуального середовища
+
+pip list
+перегляд списку залежностей наявних у віртуальному середовищі
+
+(Get-Command python).Source
+або
+(Get-Command python).Path
+подивитися шлях до виконавчого файлу python
+
