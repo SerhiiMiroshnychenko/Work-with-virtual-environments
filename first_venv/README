@@ -76,3 +76,7 @@ python -m venv .venv C:\Users\admin\Documents\virtualenvs\venv-copy
 python -m venv .venv --system-site-packages
 створення в.с. з використанням наявних глобальних залежностей
 
+python -m venv .venv --upgrade
+оновленя двійкових файлів у віртуальному середовищі до нових версій у вашій системі
+(як правило файли python, якщо інші не прив'язані до системних)
+
