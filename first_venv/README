@@ -26,3 +26,12 @@ deactivate
 https://realpython.com/python-virtual-environments-a-primer/
 рекомендації RealPython
 
+tree .venv /F
+відображення вміст .venv у структурі дерева
+
+python -m venv venv --system-site-packages
+Якщо ви додаєте --system-site-packagesпід час виклику venv,
+Python встановить значення include-system-site-packagesin в файлі pyvenv.cfg до true.
+Цей параметр означає, що ви можете використовувати будь-які зовнішні пакунки,
+які ви встановили на своєму базовому Python, як якщо б ви встановили їх у своєму віртуальному середовищі.
+
