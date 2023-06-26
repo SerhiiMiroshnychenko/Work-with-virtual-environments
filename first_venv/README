@@ -60,3 +60,19 @@ for package in installed_packages:
 >>> print(sys.executable)
 C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe
 
+python -m venv .venv --clear
+перезаписує (на нове) обране віртуальне середовище
+
+При активованому віртуальному середовищу:
+pip install -r requirements.txt
+інсталює в віртуальне середовище залежності з файлу requirements.txt
+
+python -m venv .venv --upgrade-deps
+Щоб pip оновлювалася самостійно після створення середовища
+
+python -m venv .venv C:\Users\admin\Documents\virtualenvs\venv-copy
+створення вірт.середовища з додатковою копією (створення одночасно двох в.середовищ)
+
+python -m venv .venv --system-site-packages
+створення в.с. з використанням наявних глобальних залежностей
+
