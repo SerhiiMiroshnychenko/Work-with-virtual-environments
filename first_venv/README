@@ -55,3 +55,8 @@ installed_packages = pkg_resources.working_set
 for package in installed_packages:
     print(package.key)
 
+Узнати шлях до виконавчого файлу python в інтерпритаторі:
+>>> import sys
+>>> print(sys.executable)
+C:\Users\admin\AppData\Local\Programs\Python\Python311\python.exe
+
