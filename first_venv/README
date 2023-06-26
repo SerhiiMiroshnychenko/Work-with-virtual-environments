@@ -12,3 +12,5 @@ pip list
 (Get-Command python).Path
 подивитися шлях до виконавчого файлу python
 
+deactivate
+деактивація віртуального середовища
