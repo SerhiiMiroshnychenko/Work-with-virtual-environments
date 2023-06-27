@@ -1,0 +1,5 @@
+virtualenv .venv
+створюємо віртуальне середовище
+
+.venv\Scripts\activate
+активуємо його
